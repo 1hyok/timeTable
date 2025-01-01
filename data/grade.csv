@@ -1,0 +1,35 @@
+YY,Semester,Course,Korean_Name,English_Name,Credit,Grade
+21,1,DGE,C프로그래밍,C Programming,3,4.0
+21,1,DGE,미적분학,Calculus,3,4.5
+21,1,BGE,스타트업 베이스캠프,STARTUP BASE CAMP,2,P
+21,1,BGE,사회봉사1,Social Service 1,1,N
+21,1,BGE,컴퓨팅적사고,Computational Thinking,3,4.5
+21,1,AGE,대중소비사회와소비자교육,Mass Consumer Society and Consumer Education,2,4.0
+21,1,AGE,빅데이터와소비자만족,Big Data and Consumer Satisfaction,2,4.5
+21,1,RM,CSP진로탐색,CSP Career Exploration,2,P
+21,2,DGE,JAVA프로그래밍,JAVA Programming,3,2.5
+21,2,DGE,선형대수학,Linear Algebra,3,3.5
+21,2,DGE,이산수학,Discrete Mathematics,3,4.0
+21,2,ETC,최신환경문제의이해,Understanding Contemporary Environmental Issues,1,P
+21,2,BGE,대학영어1,College English 1,3,2.0
+21,2,AGE,경제학적사고방식,Economic Thinking,2,2.0
+21,2,AGE,교양을위한한문,Classical Chinese for Liberal Arts,2,4.0
+21,2,AGE,서울의역사와문화,History and Culture of Seoul,2,4.0
+21,2,AGE,일본문화의이해,Understanding Japanese Culture,2,4.0
+24,1,DGE,수치해석,Numerical Analysis,3,2.0
+24,1,ME,웹프로그래밍,Web Programming,3,2.5
+24,1,ME,전공기초프로젝트1,Major Basic Project 1 (Capstone Design),3,4.0
+24,1,ETC,다시찾는조선의역사와인물,Rediscovering History and Figures of Joseon,1,P
+24,1,ETC,보이지않는미생물세계,Invisible World of Microorganisms,1,P
+24,1,ETC,알기쉬운화장품과피부과학이야기,Easy Guide to Cosmetics and Skin Science,1,P
+24,1,BGE,창조적사고와표현,Creative Thinking and Expression,3,2.5
+24,1,AGE,야수사회의공익과공공인재,Public Interest and Public Service in Modern Society,2,2.5
+24,1,AGE,일감호에서듣는클래식음악,Classical Music at Ilgam Lake,1,2.5
+24,2,ETC,소비자가바꾸는세상,Consumer Changing World,1,P
+24,2,BGE,사회봉사2,Social Service 2,1,P
+24,2,ETC,건학이념과성공적인대학생활,University Foundation and Successful College Life,1,P
+24,2,ME,시스템프로그래밍,System Programming,3,4.5
+24,2,ME,컴퓨터회로,Computer Circuit,3,4.5
+24,2,ME,랜덤프로세스개론,Introduction to Random Process,3,4.0
+24,2,ME,전공기초프로젝트2(종합설계),Major Basic Project 2 (Capstone Design),3,4.5
+24,2,ME,인공지능,Artificial Intelligence,3,3.5
