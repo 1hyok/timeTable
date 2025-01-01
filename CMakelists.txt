@@ -12,5 +12,4 @@ add_executable(timeTable
     src/studyPlan.cpp
     src/timeTable.cpp
     src/subject.cpp
-    src/save.cpp
 )

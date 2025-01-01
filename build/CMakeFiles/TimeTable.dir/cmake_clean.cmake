@@ -3,8 +3,6 @@ file(REMOVE_RECURSE
   "CMakeFiles/timeTable.dir/src/main.cpp.o.d"
   "CMakeFiles/timeTable.dir/src/menuItem.cpp.o"
   "CMakeFiles/timeTable.dir/src/menuItem.cpp.o.d"
-  "CMakeFiles/timeTable.dir/src/save.cpp.o"
-  "CMakeFiles/timeTable.dir/src/save.cpp.o.d"
   "CMakeFiles/timeTable.dir/src/studyPlan.cpp.o"
   "CMakeFiles/timeTable.dir/src/studyPlan.cpp.o.d"
   "CMakeFiles/timeTable.dir/src/subject.cpp.o"

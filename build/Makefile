@@ -177,30 +177,6 @@ src/menuItem.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/timeTable.dir/build.make CMakeFiles/timeTable.dir/src/menuItem.cpp.s
 .PHONY : src/menuItem.cpp.s
 
-src/save.o: src/save.cpp.o
-.PHONY : src/save.o
-
-# target to build an object file
-src/save.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/timeTable.dir/build.make CMakeFiles/timeTable.dir/src/save.cpp.o
-.PHONY : src/save.cpp.o
-
-src/save.i: src/save.cpp.i
-.PHONY : src/save.i
-
-# target to preprocess a source file
-src/save.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/timeTable.dir/build.make CMakeFiles/timeTable.dir/src/save.cpp.i
-.PHONY : src/save.cpp.i
-
-src/save.s: src/save.cpp.s
-.PHONY : src/save.s
-
-# target to generate assembly for a file
-src/save.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/timeTable.dir/build.make CMakeFiles/timeTable.dir/src/save.cpp.s
-.PHONY : src/save.cpp.s
-
 src/studyPlan.o: src/studyPlan.cpp.o
 .PHONY : src/studyPlan.o
 
@@ -288,9 +264,6 @@ help:
 	@echo "... src/menuItem.o"
 	@echo "... src/menuItem.i"
 	@echo "... src/menuItem.s"
-	@echo "... src/save.o"
-	@echo "... src/save.i"
-	@echo "... src/save.s"
 	@echo "... src/studyPlan.o"
 	@echo "... src/studyPlan.i"
 	@echo "... src/studyPlan.s"
