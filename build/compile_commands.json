@@ -1,0 +1,38 @@
+[
+{
+  "directory": "/Users/Zach2/timeTable/build",
+  "command": "/usr/bin/clang++  -I/Users/Zach2/timeTable/include -g -std=gnu++17 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.1.sdk -o CMakeFiles/timeTable.dir/src/main.cpp.o -c /Users/Zach2/timeTable/src/main.cpp",
+  "file": "/Users/Zach2/timeTable/src/main.cpp",
+  "output": "CMakeFiles/timeTable.dir/src/main.cpp.o"
+},
+{
+  "directory": "/Users/Zach2/timeTable/build",
+  "command": "/usr/bin/clang++  -I/Users/Zach2/timeTable/include -g -std=gnu++17 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.1.sdk -o CMakeFiles/timeTable.dir/src/menuItem.cpp.o -c /Users/Zach2/timeTable/src/menuItem.cpp",
+  "file": "/Users/Zach2/timeTable/src/menuItem.cpp",
+  "output": "CMakeFiles/timeTable.dir/src/menuItem.cpp.o"
+},
+{
+  "directory": "/Users/Zach2/timeTable/build",
+  "command": "/usr/bin/clang++  -I/Users/Zach2/timeTable/include -g -std=gnu++17 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.1.sdk -o CMakeFiles/timeTable.dir/src/studyPlan.cpp.o -c /Users/Zach2/timeTable/src/studyPlan.cpp",
+  "file": "/Users/Zach2/timeTable/src/studyPlan.cpp",
+  "output": "CMakeFiles/timeTable.dir/src/studyPlan.cpp.o"
+},
+{
+  "directory": "/Users/Zach2/timeTable/build",
+  "command": "/usr/bin/clang++  -I/Users/Zach2/timeTable/include -g -std=gnu++17 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.1.sdk -o CMakeFiles/timeTable.dir/src/timeTable.cpp.o -c /Users/Zach2/timeTable/src/timeTable.cpp",
+  "file": "/Users/Zach2/timeTable/src/timeTable.cpp",
+  "output": "CMakeFiles/timeTable.dir/src/timeTable.cpp.o"
+},
+{
+  "directory": "/Users/Zach2/timeTable/build",
+  "command": "/usr/bin/clang++  -I/Users/Zach2/timeTable/include -g -std=gnu++17 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.1.sdk -o CMakeFiles/timeTable.dir/src/subject.cpp.o -c /Users/Zach2/timeTable/src/subject.cpp",
+  "file": "/Users/Zach2/timeTable/src/subject.cpp",
+  "output": "CMakeFiles/timeTable.dir/src/subject.cpp.o"
+},
+{
+  "directory": "/Users/Zach2/timeTable/build",
+  "command": "/usr/bin/clang++  -I/Users/Zach2/timeTable/include -g -std=gnu++17 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.1.sdk -o CMakeFiles/timeTable.dir/src/save.cpp.o -c /Users/Zach2/timeTable/src/save.cpp",
+  "file": "/Users/Zach2/timeTable/src/save.cpp",
+  "output": "CMakeFiles/timeTable.dir/src/save.cpp.o"
+}
+]

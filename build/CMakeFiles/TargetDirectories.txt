@@ -1,0 +1,3 @@
+/Users/Zach2/timeTable/build/CMakeFiles/timeTable.dir
+/Users/Zach2/timeTable/build/CMakeFiles/edit_cache.dir
+/Users/Zach2/timeTable/build/CMakeFiles/rebuild_cache.dir

@@ -5,13 +5,15 @@
 
 class StudyPlan {
     private:
-        vector<TimeTable> tables;
+        const string index;
+        vector<TimeTable> timeTables;
     public:
-        StudyPlan(){
-
-        }
-        bool addTimeTable(const TimeTable t);
+        StudyPlan(const string i)
+            :index(i)
+        {}
+        bool addTimeTable(const TimeTable& t);
         bool showSemesters() const;
+        bool save() const;
 };
 
 #endif

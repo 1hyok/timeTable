@@ -1,11 +1,19 @@
+#include <fstream>
+#include <iostream>
+#include <ostream>
+#include <sstream>
+
 #include "timeTable.h"
+#include "subject.h"
+#include "global.h"
+
+using namespace std;
 
 bool TimeTable::showTable() const{
     showDays();
     showCells();
     return true;
 }
-
 bool TimeTable::showDays() const{
     int i;
     int spaceNum = 10;
@@ -26,7 +34,6 @@ bool TimeTable::showDays() const{
     cout << border << endl;
     return true;
 }
-
 bool TimeTable::showCells() const{
     int row, col;
     int borderNum = 24 * (DAYS_NUM + 1);
@@ -48,5 +55,56 @@ bool TimeTable::showCells() const{
 }
 
 bool TimeTable::showCandidate() const{
+
     return true;
 }
+Subject TimeTable::parseSubject(const string& line){
+    string token;
+    vector<string> tokens;
+
+    stringstream ss(line);
+
+    while(getline(ss,token,',')){
+        tokens.push_back(token);
+    }
+
+    Subject s(
+        tokens[0],
+        tokens[1],
+        tokens[2],
+        tokens[3],
+        tokens[4],
+        tokens[5]
+    );
+
+    return s;
+}
+bool TimeTable::addToCandidate(const Subject& s){
+    subjects.push_back(s);
+
+    return true;
+}
+
+bool TimeTable::saveToFiles(const string& studyPlanIndex) const{
+    saveTable();
+    saveCandidate(studyPlanIndex);
+
+    return true;
+};
+bool TimeTable::saveTable() const{
+    return true;
+};
+bool TimeTable::saveCandidate(const string& studyPlanIndex) const{
+    string subjectString;
+
+    ofstream file(DATA_PATH + STUDY_PLAN_PATH + "/studyPlan" + studyPlanIndex + TIME_TABLE_PATH + grade + "-" + semester + CANDIDATE_PATH);
+    if(!file){
+        cerr << "Fail to open candidate file for writing: " << strerror(errno) << endl;
+    }
+
+    for(const Subject& s : subjects){
+        subjectString = s.toString();
+        file << subjectString << endl;
+    }
+    return true;
+};
