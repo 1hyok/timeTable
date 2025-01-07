@@ -2,6 +2,7 @@
 build/
 /build/*
 cmake-build-*/
+/build/
 
 # IDE 설정 파일
 .vscode/
