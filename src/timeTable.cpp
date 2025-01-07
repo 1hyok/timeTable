@@ -2,6 +2,7 @@
 #include <iostream>
 #include <ostream>
 #include <sstream>
+#include <cstring>
 
 #include "timeTable.h"
 #include "subject.h"

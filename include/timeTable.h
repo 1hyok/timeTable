@@ -16,7 +16,7 @@ class TimeTable{
         const string semester;
         const int periodsNum;
         const int periodMinute;
-        vector<const Subject> subjects;
+        vector<Subject> subjects;
 
         bool showDays() const;
         bool showCells() const;
