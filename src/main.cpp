@@ -20,28 +20,30 @@ int main(){
 bool showMenu(){
     
     int menu;
+    while(1){
+        cout << "<Main>" << endl;
+        cout << "0. Exit" << endl;
+        cout << "1. Curriculum" << endl;
+        cout << "2. Retakable Courses" << endl;
 
-    cout << "0. Exit" << endl;
-    cout << "1. Curriculum" << endl;
-    cout << "2. Retakable Courses" << endl;
+        cout << endl << "Select menu >>> ";
+        cin >> menu;
 
-    cout << endl << "Select menu >>> ";
-    cin >> menu;
-
-    switch (menu)
-    {
-    case 0:
-        saveAndExit();
-    case 1:
-        showCurriculum();
-        break;
-    case 2:
-        showPoorGrade();
-        break;
-    default:
-        cout << "Selecting menu error" << endl;
-        return false;
-        break;
+        switch (menu)
+        {
+        case 0:
+            saveAndExit();
+            return true;
+            break;
+        case 1:
+            showCurriculum();
+            break;
+        case 2:
+            showPoorGrade();
+            break;
+        default:
+            cout << "Selecting menu error" << endl;
+        }
     }
 
     return true;

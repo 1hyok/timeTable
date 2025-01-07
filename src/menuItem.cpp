@@ -18,57 +18,6 @@ bool saveAndExit(){
     }
     return true;
 }
-bool showCurriculum(){
-    
-    string gradeInput, semesterInput, currentLine, token;
-    int tokenNum = 0;
-    const int gradePlace = 0, semesterPos = 1;
-
-    ifstream file(DATA_PATH + "/curriculum.csv");
-    if(!file){
-        cerr << "Fail to open the curriculum file:" << strerror(errno) << endl;
-        return false;
-    }
-    
-    cout << "What is your grade? >>> ";
-    cin >> gradeInput;
-    while(1){
-        cout << "What is your semester? >>> ";
-        cin >> semesterInput;
-        if(semesterInput == "1" || semesterInput == "2"){
-            break;
-        }else{
-            cout << "Please enter semester as 1 or 2" << endl;
-        }
-    }
-
-    cout << endl;
-    getline(file, currentLine);
-    cout << "===" << currentLine << "===" << endl;
-    while(getline(file, currentLine)){
-        stringstream ss(currentLine);
-        tokenNum = -1;
-        while(getline(ss, token, ',')){
-            tokenNum++;
-            if(tokenNum == gradePlace){
-                if(token == gradeInput){
-                    getline(ss, token, ',');
-                    tokenNum++;
-                    if (tokenNum == semesterPos){
-                        if(token == semesterInput || token == "Both"){
-                          cout << currentLine << endl;
-                        }
-                    }
-                }
-            }else{
-                break;
-            }
-        }
-    }
-
-    file.close();
-    return true;
-}
 bool showPoorGrade(){
 
     string currentLine, token;
