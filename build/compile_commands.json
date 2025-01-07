@@ -1,31 +1,31 @@
 [
 {
   "directory": "/home/zach/timeTable/build",
-  "command": "/usr/bin/c++  -I/home/zach/timeTable/include -std=gnu++17 -o CMakeFiles/timeTable.dir/src/main.cpp.o -c /home/zach/timeTable/src/main.cpp",
+  "command": "/usr/bin/g++  -I/home/zach/timeTable/include -g -std=gnu++17 -o CMakeFiles/timeTable.dir/src/main.cpp.o -c /home/zach/timeTable/src/main.cpp",
   "file": "/home/zach/timeTable/src/main.cpp",
   "output": "CMakeFiles/timeTable.dir/src/main.cpp.o"
 },
 {
   "directory": "/home/zach/timeTable/build",
-  "command": "/usr/bin/c++  -I/home/zach/timeTable/include -std=gnu++17 -o CMakeFiles/timeTable.dir/src/menuItem.cpp.o -c /home/zach/timeTable/src/menuItem.cpp",
+  "command": "/usr/bin/g++  -I/home/zach/timeTable/include -g -std=gnu++17 -o CMakeFiles/timeTable.dir/src/menuItem.cpp.o -c /home/zach/timeTable/src/menuItem.cpp",
   "file": "/home/zach/timeTable/src/menuItem.cpp",
   "output": "CMakeFiles/timeTable.dir/src/menuItem.cpp.o"
 },
 {
   "directory": "/home/zach/timeTable/build",
-  "command": "/usr/bin/c++  -I/home/zach/timeTable/include -std=gnu++17 -o CMakeFiles/timeTable.dir/src/studyPlan.cpp.o -c /home/zach/timeTable/src/studyPlan.cpp",
+  "command": "/usr/bin/g++  -I/home/zach/timeTable/include -g -std=gnu++17 -o CMakeFiles/timeTable.dir/src/studyPlan.cpp.o -c /home/zach/timeTable/src/studyPlan.cpp",
   "file": "/home/zach/timeTable/src/studyPlan.cpp",
   "output": "CMakeFiles/timeTable.dir/src/studyPlan.cpp.o"
 },
 {
   "directory": "/home/zach/timeTable/build",
-  "command": "/usr/bin/c++  -I/home/zach/timeTable/include -std=gnu++17 -o CMakeFiles/timeTable.dir/src/timeTable.cpp.o -c /home/zach/timeTable/src/timeTable.cpp",
+  "command": "/usr/bin/g++  -I/home/zach/timeTable/include -g -std=gnu++17 -o CMakeFiles/timeTable.dir/src/timeTable.cpp.o -c /home/zach/timeTable/src/timeTable.cpp",
   "file": "/home/zach/timeTable/src/timeTable.cpp",
   "output": "CMakeFiles/timeTable.dir/src/timeTable.cpp.o"
 },
 {
   "directory": "/home/zach/timeTable/build",
-  "command": "/usr/bin/c++  -I/home/zach/timeTable/include -std=gnu++17 -o CMakeFiles/timeTable.dir/src/subject.cpp.o -c /home/zach/timeTable/src/subject.cpp",
+  "command": "/usr/bin/g++  -I/home/zach/timeTable/include -g -std=gnu++17 -o CMakeFiles/timeTable.dir/src/subject.cpp.o -c /home/zach/timeTable/src/subject.cpp",
   "file": "/home/zach/timeTable/src/subject.cpp",
   "output": "CMakeFiles/timeTable.dir/src/subject.cpp.o"
 }

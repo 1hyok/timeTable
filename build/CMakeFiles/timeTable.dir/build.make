@@ -73,71 +73,71 @@ CMakeFiles/timeTable.dir/src/main.cpp.o: CMakeFiles/timeTable.dir/flags.make
 CMakeFiles/timeTable.dir/src/main.cpp.o: /home/zach/timeTable/src/main.cpp
 CMakeFiles/timeTable.dir/src/main.cpp.o: CMakeFiles/timeTable.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/zach/timeTable/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/timeTable.dir/src/main.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/timeTable.dir/src/main.cpp.o -MF CMakeFiles/timeTable.dir/src/main.cpp.o.d -o CMakeFiles/timeTable.dir/src/main.cpp.o -c /home/zach/timeTable/src/main.cpp
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/timeTable.dir/src/main.cpp.o -MF CMakeFiles/timeTable.dir/src/main.cpp.o.d -o CMakeFiles/timeTable.dir/src/main.cpp.o -c /home/zach/timeTable/src/main.cpp
 
 CMakeFiles/timeTable.dir/src/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/timeTable.dir/src/main.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/zach/timeTable/src/main.cpp > CMakeFiles/timeTable.dir/src/main.cpp.i
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/zach/timeTable/src/main.cpp > CMakeFiles/timeTable.dir/src/main.cpp.i
 
 CMakeFiles/timeTable.dir/src/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/timeTable.dir/src/main.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/zach/timeTable/src/main.cpp -o CMakeFiles/timeTable.dir/src/main.cpp.s
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/zach/timeTable/src/main.cpp -o CMakeFiles/timeTable.dir/src/main.cpp.s
 
 CMakeFiles/timeTable.dir/src/menuItem.cpp.o: CMakeFiles/timeTable.dir/flags.make
 CMakeFiles/timeTable.dir/src/menuItem.cpp.o: /home/zach/timeTable/src/menuItem.cpp
 CMakeFiles/timeTable.dir/src/menuItem.cpp.o: CMakeFiles/timeTable.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/zach/timeTable/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/timeTable.dir/src/menuItem.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/timeTable.dir/src/menuItem.cpp.o -MF CMakeFiles/timeTable.dir/src/menuItem.cpp.o.d -o CMakeFiles/timeTable.dir/src/menuItem.cpp.o -c /home/zach/timeTable/src/menuItem.cpp
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/timeTable.dir/src/menuItem.cpp.o -MF CMakeFiles/timeTable.dir/src/menuItem.cpp.o.d -o CMakeFiles/timeTable.dir/src/menuItem.cpp.o -c /home/zach/timeTable/src/menuItem.cpp
 
 CMakeFiles/timeTable.dir/src/menuItem.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/timeTable.dir/src/menuItem.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/zach/timeTable/src/menuItem.cpp > CMakeFiles/timeTable.dir/src/menuItem.cpp.i
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/zach/timeTable/src/menuItem.cpp > CMakeFiles/timeTable.dir/src/menuItem.cpp.i
 
 CMakeFiles/timeTable.dir/src/menuItem.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/timeTable.dir/src/menuItem.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/zach/timeTable/src/menuItem.cpp -o CMakeFiles/timeTable.dir/src/menuItem.cpp.s
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/zach/timeTable/src/menuItem.cpp -o CMakeFiles/timeTable.dir/src/menuItem.cpp.s
 
 CMakeFiles/timeTable.dir/src/studyPlan.cpp.o: CMakeFiles/timeTable.dir/flags.make
 CMakeFiles/timeTable.dir/src/studyPlan.cpp.o: /home/zach/timeTable/src/studyPlan.cpp
 CMakeFiles/timeTable.dir/src/studyPlan.cpp.o: CMakeFiles/timeTable.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/zach/timeTable/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/timeTable.dir/src/studyPlan.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/timeTable.dir/src/studyPlan.cpp.o -MF CMakeFiles/timeTable.dir/src/studyPlan.cpp.o.d -o CMakeFiles/timeTable.dir/src/studyPlan.cpp.o -c /home/zach/timeTable/src/studyPlan.cpp
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/timeTable.dir/src/studyPlan.cpp.o -MF CMakeFiles/timeTable.dir/src/studyPlan.cpp.o.d -o CMakeFiles/timeTable.dir/src/studyPlan.cpp.o -c /home/zach/timeTable/src/studyPlan.cpp
 
 CMakeFiles/timeTable.dir/src/studyPlan.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/timeTable.dir/src/studyPlan.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/zach/timeTable/src/studyPlan.cpp > CMakeFiles/timeTable.dir/src/studyPlan.cpp.i
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/zach/timeTable/src/studyPlan.cpp > CMakeFiles/timeTable.dir/src/studyPlan.cpp.i
 
 CMakeFiles/timeTable.dir/src/studyPlan.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/timeTable.dir/src/studyPlan.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/zach/timeTable/src/studyPlan.cpp -o CMakeFiles/timeTable.dir/src/studyPlan.cpp.s
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/zach/timeTable/src/studyPlan.cpp -o CMakeFiles/timeTable.dir/src/studyPlan.cpp.s
 
 CMakeFiles/timeTable.dir/src/timeTable.cpp.o: CMakeFiles/timeTable.dir/flags.make
 CMakeFiles/timeTable.dir/src/timeTable.cpp.o: /home/zach/timeTable/src/timeTable.cpp
 CMakeFiles/timeTable.dir/src/timeTable.cpp.o: CMakeFiles/timeTable.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/zach/timeTable/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/timeTable.dir/src/timeTable.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/timeTable.dir/src/timeTable.cpp.o -MF CMakeFiles/timeTable.dir/src/timeTable.cpp.o.d -o CMakeFiles/timeTable.dir/src/timeTable.cpp.o -c /home/zach/timeTable/src/timeTable.cpp
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/timeTable.dir/src/timeTable.cpp.o -MF CMakeFiles/timeTable.dir/src/timeTable.cpp.o.d -o CMakeFiles/timeTable.dir/src/timeTable.cpp.o -c /home/zach/timeTable/src/timeTable.cpp
 
 CMakeFiles/timeTable.dir/src/timeTable.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/timeTable.dir/src/timeTable.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/zach/timeTable/src/timeTable.cpp > CMakeFiles/timeTable.dir/src/timeTable.cpp.i
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/zach/timeTable/src/timeTable.cpp > CMakeFiles/timeTable.dir/src/timeTable.cpp.i
 
 CMakeFiles/timeTable.dir/src/timeTable.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/timeTable.dir/src/timeTable.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/zach/timeTable/src/timeTable.cpp -o CMakeFiles/timeTable.dir/src/timeTable.cpp.s
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/zach/timeTable/src/timeTable.cpp -o CMakeFiles/timeTable.dir/src/timeTable.cpp.s
 
 CMakeFiles/timeTable.dir/src/subject.cpp.o: CMakeFiles/timeTable.dir/flags.make
 CMakeFiles/timeTable.dir/src/subject.cpp.o: /home/zach/timeTable/src/subject.cpp
 CMakeFiles/timeTable.dir/src/subject.cpp.o: CMakeFiles/timeTable.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/zach/timeTable/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/timeTable.dir/src/subject.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/timeTable.dir/src/subject.cpp.o -MF CMakeFiles/timeTable.dir/src/subject.cpp.o.d -o CMakeFiles/timeTable.dir/src/subject.cpp.o -c /home/zach/timeTable/src/subject.cpp
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/timeTable.dir/src/subject.cpp.o -MF CMakeFiles/timeTable.dir/src/subject.cpp.o.d -o CMakeFiles/timeTable.dir/src/subject.cpp.o -c /home/zach/timeTable/src/subject.cpp
 
 CMakeFiles/timeTable.dir/src/subject.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/timeTable.dir/src/subject.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/zach/timeTable/src/subject.cpp > CMakeFiles/timeTable.dir/src/subject.cpp.i
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/zach/timeTable/src/subject.cpp > CMakeFiles/timeTable.dir/src/subject.cpp.i
 
 CMakeFiles/timeTable.dir/src/subject.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/timeTable.dir/src/subject.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/zach/timeTable/src/subject.cpp -o CMakeFiles/timeTable.dir/src/subject.cpp.s
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/zach/timeTable/src/subject.cpp -o CMakeFiles/timeTable.dir/src/subject.cpp.s
 
 # Object files for target timeTable
 timeTable_OBJECTS = \

@@ -1,1 +1,1 @@
-/usr/bin/c++ CMakeFiles/timeTable.dir/src/main.cpp.o CMakeFiles/timeTable.dir/src/menuItem.cpp.o CMakeFiles/timeTable.dir/src/studyPlan.cpp.o CMakeFiles/timeTable.dir/src/timeTable.cpp.o CMakeFiles/timeTable.dir/src/subject.cpp.o -o timeTable 
+/usr/bin/g++ -g CMakeFiles/timeTable.dir/src/main.cpp.o CMakeFiles/timeTable.dir/src/menuItem.cpp.o CMakeFiles/timeTable.dir/src/studyPlan.cpp.o CMakeFiles/timeTable.dir/src/timeTable.cpp.o CMakeFiles/timeTable.dir/src/subject.cpp.o -o timeTable 
