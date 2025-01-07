@@ -1,0 +1,36 @@
+# Build 디렉토리
+build/
+/build/*
+cmake-build-*/
+
+# IDE 설정 파일
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# 컴파일된 파일들
+*.o
+*.obj
+*.exe
+*.out
+*.app
+*.dll
+*.dylib
+*.so
+
+# CMake 생성 파일
+CMakeCache.txt
+CMakeFiles/
+cmake_install.cmake
+install_manifest.txt
+
+# Mac 시스템 파일
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Windows 시스템 파일
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
