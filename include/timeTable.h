@@ -1,40 +1,42 @@
 #ifndef __TIMETABLE_H_
 #define __TIMETABLE_H_
 
-#include "subject.h"
 #include <vector>
+
+#include "subject.h"
 
 const int HOURS_NUM = 10;
 const int DAYS_NUM = 5;
 
 const string dayNames[DAYS_NUM] = {"MON", "TUE", "WED", "THU", "FRI"};
 
-class TimeTable{
-
+class TimeTable {
     private:
-        const string grade;
-        const string semester;
-        const int periodsNum;
-        const int periodMinute;
-        vector<Subject> subjects;
+    // Variable
+    const string grade;
+    const string semester;
+    const string periodsNum;
+    const string periodMinute;
+    vector<Subject> subjects;
+    // Show Funtion
+    bool showDays() const;
+    bool showCells() const;
+    // Save Function
+    bool saveTable(const string &studyPlanIndex) const;
+    bool saveCandidate(const string &studyPlanIndex) const;
 
-        bool showDays() const;
-        bool showCells() const;
-
-        bool saveTable() const;
-        bool saveCandidate(const string& studyPlanIndex) const;
     public:
-        TimeTable(const string g, const string s)
-            :grade(g), semester(s), periodsNum(s == "Summer" || s == "Winter" ? HOURS_NUM : HOURS_NUM * 2), periodMinute(s == "Summer" || s == "Winter" ? 60 : 30)
-        {
-        };
+    TimeTable(const string g, const string s)
+        : grade(g), semester(s),
+          periodsNum(s == "Summer" || s == "Winter" ? to_string(HOURS_NUM) : to_string(HOURS_NUM * 2)),
+          periodMinute(s == "Summer" || s == "Winter" ? "60" : "30"){};
 
-        bool showTable() const;
-        bool showCandidate() const;
+    bool showTable() const;
+    bool showCandidate() const;
 
-        Subject parseSubject(const string& line);
-        bool addToCandidate(const Subject& s);
+    Subject parseSubject(const string &line);
+    bool addToCandidate(const Subject &s);
 
-        bool saveToFiles(const string& studyPlanIndex) const;
+    bool saveToFiles(const string &studyPlanIndex) const;
 };
 #endif

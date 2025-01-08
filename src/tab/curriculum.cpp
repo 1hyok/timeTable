@@ -1,43 +1,72 @@
-#include <string>
 #include <fstream>
 #include <iostream>
 #include <sstream>
+#include <string>
 
 #include "global.h"
 
-bool curriculumTab(){
-    while(1){
-        
+const string MENU_NUM = "1";
+
+bool viewCurriculum();
+bool searchCourses();
+
+bool curriculum() {
+    int menu;
+
+    while (1) {
+        cout << endl << "<Curriculum>" << endl;
+        cout << MENU_NUM + "-0. Main" << endl;
+        cout << MENU_NUM + "-1. View Curriculum" << endl;
+        cout << MENU_NUM + "-2. Search Courses" << endl;
+
+        cout << endl << "Select menu >>> ";
+        cin >> menu;
+
+        switch (menu) {
+        case 0:
+            return true;
+            break;
+        case 1:
+            viewCurriculum();
+            break;
+        case 2:
+            searchCourses();
+            break;
+        default:
+            cout << "Selecting menu error" << endl;
+        }
     }
+
+    return true;
 }
 
-bool showCurriculum(){
-    
+bool viewCurriculum() {
+
     string gradeInput, semesterInput, currentLine, token;
-    int tokenNum = 0;
+    int tokenNum;
     const int gradePos = 0, semesterPos = 1;
 
     ifstream file(DATA_PATH + "/curriculum.csv");
-    if(!file){
+    if (!file) {
         cerr << "Fail to open the curriculum file:" << strerror(errno) << endl;
         return false;
     }
-    
-    while(1){
+
+    while (1) {
         cout << "What is your grade? >>> ";
         cin >> gradeInput;
-        if(gradeInput == "1" || gradeInput == "2" || gradeInput == "3" || gradeInput == "4"){
+        if (gradeInput == "1" || gradeInput == "2" || gradeInput == "3" || gradeInput == "4") {
             break;
-        }else{
+        } else {
             cout << "Please enter a grade between 1 and 4" << endl;
         }
     }
-    while(1){
+    while (1) {
         cout << "What is your semester? >>> ";
         cin >> semesterInput;
-        if(semesterInput == "1" || semesterInput == "2"){
+        if (semesterInput == "1" || semesterInput == "2") {
             break;
-        }else{
+        } else {
             cout << "Please enter semester as 1 or 2" << endl;
         }
     }
@@ -45,22 +74,22 @@ bool showCurriculum(){
     cout << endl;
     getline(file, currentLine);
     cout << "===" << currentLine << "===" << endl;
-    while(getline(file, currentLine)){
+    while (getline(file, currentLine)) {
         stringstream ss(currentLine);
         tokenNum = -1;
-        while(getline(ss, token, ',')){
+        while (getline(ss, token, ',')) {
             tokenNum++;
-            if(tokenNum == gradePos){
-                if(token == gradeInput){
+            if (tokenNum == gradePos) {
+                if (token == gradeInput) {
                     getline(ss, token, ',');
                     tokenNum++;
-                    if (tokenNum == semesterPos){
-                        if(token == semesterInput || token == "Both"){
-                          cout << currentLine << endl;
+                    if (tokenNum == semesterPos) {
+                        if (token == semesterInput || token == "Both") {
+                            cout << currentLine << endl;
                         }
                     }
                 }
-            }else{
+            } else {
                 break;
             }
         }
@@ -70,25 +99,26 @@ bool showCurriculum(){
     return true;
 }
 
-bool searchCourse(){
+bool searchCourses() {
     string targetName, token, currentLine;
     ifstream file(DATA_PATH + "/curriculum.csv");
-    int tokenNum = 0;
+    int tokenNum = -1;
     const int namePos = 3;
 
     cout << "Enter the subject name to search:" << endl;
     cin >> targetName;
 
-    while(getline(file, currentLine)){
+    while (getline(file, currentLine)) {
         stringstream ss(currentLine);
-        while(getline(ss, token, ',')){
+        tokenNum = -1;
+        while (getline(ss, token, ',')) {
             tokenNum++;
-            if(tokenNum == namePos){
-                if(token == targetName){
+            if (tokenNum == namePos) {
+                if (token == targetName) {
                     cout << currentLine << endl;
                     file.close();
                     return true;
-                }else{
+                } else {
                     break;
                 }
             }
