@@ -10,11 +10,13 @@ class StudyPlan {
 
     public:
     StudyPlan(const string i) : index(i) {}
+    string getIndex() const { return index; }
     bool addTimeTable(const TimeTable &t);
     bool showSemesters() const;
+
     bool saveToFiles() const;
     bool savePlan() const;
-    string getIndex() const { return index; }
+    bool loadTables();
 };
 
 #endif

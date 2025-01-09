@@ -11,7 +11,7 @@ bool showPoorGrade() {
     vector<string> grdArray, tmpArray;
     int tokenNum, i;
 
-    ifstream file(DATA_PATH + "/grade.csv");
+    ifstream file("../" + DATA_DIR + "/" + "grade.csv");
     if (!file) {
         cerr << "Fail to open the grade file:" << strerror(errno) << endl;
         return false;

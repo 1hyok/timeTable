@@ -46,7 +46,7 @@ bool viewCurriculum() {
     int tokenNum;
     const int gradePos = 0, semesterPos = 1;
 
-    ifstream file(DATA_PATH + "/curriculum.csv");
+    ifstream file("../" + DATA_DIR + "/" + "curriculum.csv");
     if (!file) {
         cerr << "Fail to open the curriculum file:" << strerror(errno) << endl;
         return false;
@@ -101,7 +101,7 @@ bool viewCurriculum() {
 
 bool searchCourses() {
     string targetName, token, currentLine;
-    ifstream file(DATA_PATH + "/curriculum.csv");
+    ifstream file("../" + DATA_DIR + "/" + "curriculum.csv");
     int tokenNum = -1;
     const int namePos = 3;
 
