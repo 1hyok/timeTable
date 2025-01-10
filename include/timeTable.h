@@ -17,7 +17,9 @@ class TimeTable {
     const string semester;
     const string periodsNum;
     const string periodMinute;
-    vector<Subject> subjects;
+    vector<Subject> candidates;
+
+    int countCsvs(string path);
     // Show Funtion
     bool showDays() const;
     bool showCells() const;
@@ -35,8 +37,9 @@ class TimeTable {
     bool showCandidate() const;
 
     Subject parseSubject(const string &line);
-    bool addToCandidate(const Subject &s);
+    bool addCandidate(const Subject &s);
 
     bool saveToFiles(const string &studyPlanIndex) const;
+    bool loadCandidate(const string &studyPlanIndex);
 };
 #endif

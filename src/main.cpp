@@ -9,10 +9,12 @@ bool saveAndExit();
 bool curriculum();
 bool showPoorGrade();
 bool studyPlanTab();
+bool loadFiles();
 
 int main() {
     TimeTable tT("3", "1");
     // t.showTable();
+    loadFiles();
     showMenu();
 
     return 0;

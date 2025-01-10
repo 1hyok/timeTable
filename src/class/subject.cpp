@@ -11,7 +11,7 @@ bool Subject::saveToFiles(const string &studyPlanIndex, const string &grade, con
                   semester + "/" + CANDIDATE_DIR + "/" + engName + ".csv");
 
     if (!file) {
-        cerr << "Fail to open candidate file for writing: " << strerror(errno) << endl;
+        cerr << "Fail to open Subject " + engName + " for writing: " << strerror(errno) << endl;
         return false;
     }
     cout << "Saving Subject " + engName + "..." << endl;

@@ -6,15 +6,14 @@
 using namespace std;
 
 class Subject {
-   private:
+    private:
     const string grade, semester, korName, engName, credit, hour;
 
-   public:
-    Subject(const string g, const string s, const string k, const string e,
-            const string c, const string h)
+    public:
+    string getGrade() { return grade; }
+    Subject(const string g, const string s, const string k, const string e, const string c, const string h)
         : grade(g), semester(s), korName(k), engName(e), credit(c), hour(h){};
-    bool saveToFiles(const string &studyPlanIndex, const string &grade,
-                     const string &semester) const;
+    bool saveToFiles(const string &studyPlanIndex, const string &grade, const string &semester) const;
 };
 
 #endif

@@ -1,3 +1,5 @@
+#include "global.h"
+#include "studyPlan.h"
 #include <iostream>
 #include <string>
 
@@ -6,7 +8,7 @@ using namespace std;
 const string TAB_NAME = "Study Plan";
 
 int printPlans();
-bool editSelectedPlan(const int selectedPlan, const string &menuNum);
+bool editSelectedPlan(StudyPlan &selectedPlan, const string &menuNum);
 
 bool planList() {
     const string menuNum = "3-1";
@@ -20,15 +22,20 @@ bool planList() {
         } else if (selectedPlan == -2) {
             continue;
         } else {
-            editSelectedPlan(selectedPlan, menuNum);
+            for (StudyPlan &s : studyPlans) {
+                if (to_string(selectedPlan) == s.getIndex()) {
+                    editSelectedPlan(s, menuNum);
+                    break;
+                }
+            }
         }
     }
 }
 
-bool editSelectedPlan(const int selectedPlan, const string &menuNum) {
+bool editSelectedPlan(StudyPlan &selectedPlan, const string &menuNum) {
     while (1) {
         int menu;
-        cout << "<" + TAB_NAME + " - List - " << selectedPlan << ">" << endl;
+        cout << "<" + TAB_NAME + " - List - " << selectedPlan.getIndex() << ">" << endl;
         cout << menuNum + "-0. Back" << endl;
         cout << menuNum + "-1. Add timetables" << endl;
         cout << menuNum + "-2. Delete timetales" << endl;
@@ -40,7 +47,7 @@ bool editSelectedPlan(const int selectedPlan, const string &menuNum) {
             return true;
             break;
         case 1:
-            break;
+            // selectedPlan.addTimeTable(t("3","1");
         case 2:
             break;
         default:

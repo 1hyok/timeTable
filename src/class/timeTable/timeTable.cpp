@@ -18,8 +18,7 @@ Subject TimeTable::parseSubject(const string &line) {
 
     return s;
 }
-bool TimeTable::addToCandidate(const Subject &s) {
-    subjects.push_back(s);
-
+bool TimeTable::addCandidate(const Subject &s) {
+    candidates.push_back(s);
     return true;
 }
