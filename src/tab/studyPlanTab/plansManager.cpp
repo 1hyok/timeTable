@@ -8,7 +8,7 @@ int printPlans();
 bool addPlan() {
     string idx = to_string(studyPlans.size());
     studyPlans.emplace_back(idx);
-    cout << "Plan " + idx + " has been added" << endl;
+    cout << "Plan " << idx << " has been added" << endl;
     return true;
 }
 

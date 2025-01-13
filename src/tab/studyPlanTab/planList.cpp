@@ -14,7 +14,7 @@ bool planList() {
     const string menuNum = "3-1";
 
     while (1) {
-        cout << endl << "<" + TAB_NAME + "-List>" << endl;
+        cout << endl << "<" << TAB_NAME << "-List>" << endl;
         int selectedPlan = printPlans();
 
         if (selectedPlan == -1) {
@@ -35,10 +35,10 @@ bool planList() {
 bool editSelectedPlan(StudyPlan &selectedPlan, const string &menuNum) {
     while (1) {
         int menu;
-        cout << "<" + TAB_NAME + " - List - " << selectedPlan.getIndex() << ">" << endl;
-        cout << menuNum + "-0. Back" << endl;
-        cout << menuNum + "-1. Add timetables" << endl;
-        cout << menuNum + "-2. Delete timetales" << endl;
+        cout << "<" << TAB_NAME << " - List - " << selectedPlan.getIndex() << ">" << endl;
+        cout << menuNum << "-0. Back" << endl;
+        cout << menuNum << "-1. Add timetables" << endl;
+        cout << menuNum << "-2. Delete timetales" << endl;
 
         cout << endl << "Select menu >>> ";
         cin >> menu;
@@ -55,4 +55,9 @@ bool editSelectedPlan(StudyPlan &selectedPlan, const string &menuNum) {
         }
     }
     return true;
+}
+
+bool addTimeTable(const StudyPlan &plan) {
+    cout << "<" << TAB_NAME << " - List - " << plan.getIndex() << ">" << endl;
+    cout << "" << endl;
 }

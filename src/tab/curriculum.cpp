@@ -1,3 +1,4 @@
+#include <exception>
 #include <fstream>
 #include <iostream>
 #include <sstream>
@@ -15,9 +16,9 @@ bool curriculum() {
 
     while (1) {
         cout << endl << "<Curriculum>" << endl;
-        cout << MENU_NUM + "-0. Main" << endl;
-        cout << MENU_NUM + "-1. View Curriculum" << endl;
-        cout << MENU_NUM + "-2. Search Courses" << endl;
+        cout << MENU_NUM << "-0. Main" << endl;
+        cout << MENU_NUM << "-1. View Curriculum" << endl;
+        cout << MENU_NUM << "-2. Search Courses" << endl;
 
         cout << endl << "Select menu >>> ";
         cin >> menu;
@@ -47,7 +48,12 @@ bool viewCurriculum() {
     const int gradePos = 0, semesterPos = 1;
 
     ifstream file("../" + DATA_DIR + "/" + "curriculum.csv");
-    if (!file) {
+
+    try {
+        if (!file.is_open()) {
+            throw exception();
+        }
+    } catch (const exception &) {
         cerr << "Fail to open the curriculum file:" << strerror(errno) << endl;
         return false;
     }

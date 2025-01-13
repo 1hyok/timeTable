@@ -19,7 +19,6 @@ class TimeTable {
     const string periodMinute;
     vector<Subject> candidates;
 
-    int countCsvs(string path);
     // Show Funtion
     bool showDays() const;
     bool showCells() const;
@@ -31,12 +30,12 @@ class TimeTable {
     TimeTable(const string g, const string s)
         : grade(g), semester(s),
           periodsNum(s == "Summer" || s == "Winter" ? to_string(HOURS_NUM) : to_string(HOURS_NUM * 2)),
-          periodMinute(s == "Summer" || s == "Winter" ? "60" : "30"){};
+          periodMinute(s == "Summer" || s == "Winter" ? "60" : "30"), candidates(){};
 
     bool showTable() const;
     bool showCandidate() const;
 
-    Subject parseSubject(const string &line);
+    Subject parseSubject(const string &line) const;
     bool addCandidate(const Subject &s);
 
     bool saveToFiles(const string &studyPlanIndex) const;

@@ -4,7 +4,7 @@
 
 using namespace std;
 
-Subject TimeTable::parseSubject(const string &line) {
+Subject TimeTable::parseSubject(const string &line) const {
     string token;
     vector<string> tokens;
 

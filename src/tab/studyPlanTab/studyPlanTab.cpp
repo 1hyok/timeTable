@@ -19,11 +19,11 @@ bool studyPlanTab() {
     const string menuNum = "3";
 
     while (1) {
-        cout << endl << "<" + TAB_NAME + ">" << endl;
-        cout << menuNum + "-0. Main" << endl;
-        cout << menuNum + "-1. List" << endl;
-        cout << menuNum + "-2. Add" << endl;
-        cout << menuNum + "-3. Delete" << endl;
+        cout << endl << "<" << TAB_NAME << ">" << endl;
+        cout << menuNum << "-0. Main" << endl;
+        cout << menuNum << "-1. List" << endl;
+        cout << menuNum << "-2. Add" << endl;
+        cout << menuNum << "-3. Delete" << endl;
 
         cout << endl << "Select menu >>> ";
         cin >> menu;

@@ -1,4 +1,5 @@
 #include <cstring>
+#include <exception>
 #include <fstream>
 #include <iostream>
 #include <sstream>
@@ -12,7 +13,12 @@ bool showPoorGrade() {
     int tokenNum, i;
 
     ifstream file("../" + DATA_DIR + "/" + "grade.csv");
-    if (!file) {
+
+    try {
+        if (file.is_open()) {
+            throw exception();
+        }
+    } catch (const exception &) {
         cerr << "Fail to open the grade file:" << strerror(errno) << endl;
         return false;
     }
@@ -27,15 +33,12 @@ bool showPoorGrade() {
         while (getline(ss, token, ',')) {
             tokenNum++;
             if (tokenNum == 6) {
-                if (token.length() == 1 && isalpha(token[0])) {
-                    continue;
-                } else if (token.length() == 3 && token[1] == '.') {
-                    if (stof(token) <= 2.5) {
+                if (token.length() == 3 && token[1] == '.') {
+                    if (stof(token) <= 2.5)
                         grdArray.push_back(currentLine);
-                        continue;
-                    }
-                } else {
+                } else if (!(token.length() == 1 && isalpha(token[0]))) {
                     cout << "Grade Format Error" << endl;
+                    file.close();
                     return false;
                 }
             }
@@ -59,9 +62,7 @@ bool showPoorGrade() {
     }
 
     cout << "The Others" << endl;
-    // for(i = 0; i < grdArray.size(); i++){
-    //     cout << grdArray[i] << endl;
-    // }
+
     for (const string &s : grdArray) {
         cout << s << endl;
     }
