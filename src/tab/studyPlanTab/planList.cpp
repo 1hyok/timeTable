@@ -2,6 +2,7 @@
 #include "studyPlan.h"
 #include <iostream>
 #include <string>
+#include <sys/syslimits.h>
 
 using namespace std;
 
@@ -60,4 +61,5 @@ bool editSelectedPlan(StudyPlan &selectedPlan, const string &menuNum) {
 bool addTimeTable(const StudyPlan &plan) {
     cout << "<" << TAB_NAME << " - List - " << plan.getIndex() << ">" << endl;
     cout << "" << endl;
+    return true;
 }
